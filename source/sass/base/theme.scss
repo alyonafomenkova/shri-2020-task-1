@@ -1,3 +1,53 @@
+$col: red;
+
 .theme {
-  background-color: red;
+  background-color: $col;
+}
+
+.theme_color_project {
+  background-color: pink;
+
+  &-default {
+    --bg-default: #FFFFFF;
+    --bg-accent: #ffcc00;
+    --border: #000000;
+
+    --primary-text: #000000;
+    --secondary-text: rgba(0, 0, 0, 0.6);
+    --additional-text: rgba(0, 0, 0, 0.3);
+    --link-text:  #0077ff;
+  }
+
+  &-brand {
+    --bg-default: #0077ff;
+    --bg-accent: #FFFFFF;
+    --border: #FFFFFF;
+
+    --primary-text: #FFFFFF;
+    --secondary-text: rgba(255, 255, 255, 0.6);
+    --additional-text: rgba(255, 255, 255, 0.3);
+    --link-text:  #FFFFFF;
+  }
+
+  &-inverse {
+    --bg-default: #000000;
+    --bg-accent: #FFFFFF;
+    --border: #FFFFFF;
+
+    --primary-text: #FFFFFF;
+    --secondary-text: rgba(255, 255, 255, 0.6);
+    --additional-text: rgba(255, 255, 255, 0.3);
+    --link-text:  #0077ff;
+  }
+
+  &-warning {
+    --bg-default: #ff3333;
+    --bg-accent: #FFFFFF;
+    --border: #ff3333;
+
+    --primary-text: #FFFFFF;
+    --secondary-text: rgba(255, 255, 255, 0.6);
+    --additional-text: rgba(255, 255, 255, 0.3);
+    --link-text:  #FFFFFF;
+  }
 }
