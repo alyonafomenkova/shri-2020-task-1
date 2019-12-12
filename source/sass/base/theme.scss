@@ -1,11 +1,11 @@
-$col: red;
-
-.theme {
-  background-color: $col;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .theme_color_project {
-  background-color: pink;
+  background-color: pink; //
 
   &-default {
     --bg-default: #FFFFFF;
@@ -51,3 +51,43 @@ $col: red;
     --link-text:  #FFFFFF;
   }
 }
+
+.theme_size_default {
+  --font-size-s: 8px;
+  --font-size-m: 10px;
+  --font-size-l: 11px;
+  --font-size-xl: 13px;
+  --font-size-xxl: 16px;
+
+  --line-height-s: 21px;
+  --line-height-m: 25px;
+  --line-height-l: 28px;
+  --line-height-xl: 34px;
+  --line-height-xxl: 38px;
+}
+
+.theme_space_default {
+  --xxxs: 3px;
+  --xxs: 6px;
+  --xs: 9px;
+  --s: 15px;
+  --m: 18px;
+  --l: 24px;
+  --xl: 27px;
+  --xxl: 36px;
+  --xxxl: 45px;
+  --xxxxl: 51px;
+  --xxxxxl: 72px;
+}
+
+.theme_gap_small {
+  --gap: --s;
+}
+
+@media (min-width: $desktop-width) {
+  .theme_gap_small {
+    --gap: --xl;
+  }
+}
+
+// TODO: Для получения половинного значения переменная gap делится на два.
