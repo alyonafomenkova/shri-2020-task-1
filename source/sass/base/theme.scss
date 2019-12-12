@@ -5,8 +5,6 @@
 }
 
 .theme_color_project {
-  background-color: pink; //
-
   &-default {
     --bg-default: #FFFFFF;
     --bg-accent: #ffcc00;
@@ -81,13 +79,11 @@
 }
 
 .theme_gap_small {
-  --gap: --s;
+  --gap: var(--s);
 }
 
 @media (min-width: $desktop-width) {
   .theme_gap_small {
-    --gap: --xl;
+    --gap: var(--xl);
   }
 }
-
-// TODO: Для получения половинного значения переменная gap делится на два.
