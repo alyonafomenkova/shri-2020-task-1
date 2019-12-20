@@ -13,8 +13,8 @@
 
 .layout_container_space-v {
   &_xxxxl {
-    padding-top: var(--xxxxl);
-    padding-bottom: var(--xxxxl);
+    padding-top: var(--space-xxxxl);
+    padding-bottom: var(--space-xxxxl);
   }
   &_xxxxxl {
     padding-top: var(--xxxxxl);
@@ -24,9 +24,9 @@
 
 .layout_container_indent-b {
   &_xxl {
-    margin-bottom: var(--xxl);
+    margin-bottom: var(--space-xxl);
   }
   &_xxxxl {
-    margin-bottom: var(--xxxxl);
+    margin-bottom: var(--space-xxxxl);
   }
 }

@@ -6,47 +6,47 @@
 
 .theme_color_project {
   &-default {
-    --bg-default: #FFFFFF;
-    --bg-accent: #ffcc00;
-    --border: #000000;
+    --bg-default-color: #FFFFFF;
+    --bg-accent-color: #ffcc00;
+    --border-color: #000000;
 
-    --primary-text: #000000;
-    --secondary-text: rgba(0, 0, 0, 0.6);
-    --additional-text: rgba(0, 0, 0, 0.3);
-    --link-text:  #0077ff;
+    --primary-text-color: #000000;
+    --secondary-text-color: rgba(0, 0, 0, 0.6);
+    --additional-text-color: rgba(0, 0, 0, 0.3);
+    --link-text-color:  #0077ff;
   }
 
   &-brand {
-    --bg-default: #0077ff;
-    --bg-accent: #FFFFFF;
-    --border: #FFFFFF;
+    --bg-default-color: #0077ff;
+    --bg-accent-color: #FFFFFF;
+    --border-color: #FFFFFF;
 
-    --primary-text: #FFFFFF;
-    --secondary-text: rgba(255, 255, 255, 0.6);
-    --additional-text: rgba(255, 255, 255, 0.3);
-    --link-text:  #FFFFFF;
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: rgba(255, 255, 255, 0.6);
+    --additional-text-color: rgba(255, 255, 255, 0.3);
+    --link-text-color:  #FFFFFF;
   }
 
   &-inverse {
-    --bg-default: #000000;
-    --bg-accent: #FFFFFF;
-    --border: #FFFFFF;
+    --bg-default-color: #000000;
+    --bg-accent-color: #FFFFFF;
+    --border-color: #FFFFFF;
 
-    --primary-text: #FFFFFF;
-    --secondary-text: rgba(255, 255, 255, 0.6);
-    --additional-text: rgba(255, 255, 255, 0.3);
-    --link-text:  #0077ff;
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: rgba(255, 255, 255, 0.6);
+    --additional-text-color: rgba(255, 255, 255, 0.3);
+    --link-text-color:  #0077ff;
   }
 
   &-warning {
-    --bg-default: #ff3333;
-    --bg-accent: #FFFFFF;
-    --border: #ff3333;
+    --bg-default-color: #ff3333;
+    --bg-accent-color: #FFFFFF;
+    --border-color: #ff3333;
 
-    --primary-text: #FFFFFF;
-    --secondary-text: rgba(255, 255, 255, 0.6);
-    --additional-text: rgba(255, 255, 255, 0.3);
-    --link-text:  #FFFFFF;
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: rgba(255, 255, 255, 0.6);
+    --additional-text-color: rgba(255, 255, 255, 0.3);
+    --link-text-color:  #FFFFFF;
   }
 }
 
@@ -65,25 +65,25 @@
 }
 
 .theme_space_default {
-  --xxxs: 3px;
-  --xxs: 6px;
-  --xs: 9px;
-  --s: 15px;
-  --m: 18px;
-  --l: 24px;
-  --xl: 27px;
-  --xxl: 36px;
-  --xxxl: 45px;
-  --xxxxl: 51px;
-  --xxxxxl: 72px;
+  --space-xxxs: 3px;
+  --space-xxs: 6px;
+  --space-xs: 9px;
+  --space-s: 15px;
+  --space-m: 18px;
+  --space-l: 24px;
+  --space-xl: 27px;
+  --space-xxl: 36px;
+  --space-xxxl: 45px;
+  --space-xxxxl: 51px;
+  --space-xxxxxl: 72px;
 }
 
 .theme_gap_small {
-  --gap: var(--s);
+  --gap: var(--space-s);
 }
 
 @media (min-width: $desktop-width) {
   .theme_gap_small {
-    --gap: var(--xl);
+    --gap: var(--space-xl);
   }
 }
