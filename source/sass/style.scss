@@ -1,13 +1,17 @@
 @import "base/variables.scss";
-@import "base/theme.scss";
-@import "base/layout.scss";
-@import "base/grid.scss";
+
+@import "base/theme/theme.scss";
+
+@import "base/layout/layout.scss";
+@import "base/layout/grid.scss";
+
 @import "base/patterns/card.scss";
 @import "base/patterns/form.scss";
 @import "base/patterns/informer.scss";
 @import "base/patterns/list.scss";
 @import "base/patterns/icon-plus.scss";
 @import "base/patterns/section.scss";
+
 @import "base/content/text.scss";
 @import "base/content/avatar.scss";
 @import "base/content/brand-logo.scss";
