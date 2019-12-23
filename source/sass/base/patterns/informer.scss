@@ -1,0 +1,38 @@
+.informer {
+  &_border_all {
+    border: 3px solid var(--border-color);
+  }
+
+  &_view_default {
+    background-color: var(--bg-default-color);
+  }
+}
+
+.informer__content,
+.informer__action {
+  display: flex;
+
+  &_distribute {
+    &_default {
+      justify-content: space-around; // TODO: уточнить, какое значение должно быть по default
+    } 
+
+    &_between {
+      justify-content: space-between;
+    } 
+
+    &_center {
+      justify-content: center;
+    } 
+  }
+
+  &_space-a {
+    &_xl {
+      padding: var(--space-xl);
+    }
+
+    &_xxl {
+      padding: var(--space-xxl);
+    }
+  }
+}
