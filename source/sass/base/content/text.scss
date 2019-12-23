@@ -1,0 +1,155 @@
+.text {
+  &_align {
+    &_center {
+      text-align: center;
+    }
+  }
+
+  &_size {
+    &_s {
+      font-size: var(--font-size-s);
+
+      .text__word {
+        height: 8px;
+  
+        &_width {
+          &_s {
+            width: 20px;
+          }
+  
+          &_m {
+            width: 48px;
+          }
+    
+          &_l {
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    &_m {
+      font-size: var(--font-size-m);
+
+      .text__word {
+        height: 10px;
+  
+        &_width {
+          &_s {
+            width: 24px;
+          }
+    
+          &_m {
+            width: 56px;
+          }
+    
+          &_l {
+            width: 114px;
+          }
+        }
+      }
+    }
+
+    &_l {
+      font-size: var(--font-size-l);
+
+      .text__word {
+        height: 11px;
+  
+        &_width {
+          &_s {
+            width: 28px;
+          }
+    
+          &_m {
+            width: 68px;
+          }
+    
+          &_l {
+            width: 138px;
+          }
+        }
+      }
+    }
+
+    &_xl {
+      font-size: var(--font-size-xl);
+
+      .text__word {
+        height: 13px;
+  
+        &_width {
+          &_s {
+            width: 32px;
+          }
+    
+          &_m {
+            width: 74px;
+          }
+    
+          &_l {
+            width: 154px;
+          }
+        }
+      }
+    }
+
+    &_xxl {
+      font-size: var(--font-size-xxl);
+
+      .text__word {
+        height: 16px;
+  
+        &_width {
+          &_s {
+            width: 36px;
+          }
+    
+          &_m {
+            width: 88px;
+          }
+    
+          &_l {
+            width: 184px;
+          }
+        }
+      }
+    }
+  }
+
+  &_type {
+    &_h1 {
+      margin: 18px 0 24px;
+    }
+
+    &_h2 {
+      margin: 45px 0 21px;
+    }
+
+    &_h3 {
+      margin: 42px 0 0;
+    }
+
+    &_p {
+      margin: 15px 0 21px;
+    }
+  }
+
+  &_view {
+    &_primary {
+      color: var(--primary-text-color);
+    }
+
+    &_secondary {
+      color: var(--secondary-text-color);
+    }
+
+    &_ghost {
+      color: var(--additional-text-color);
+    }
+
+    &_link {
+      color: var(--link-text-color);
+    }
+  }
+}
