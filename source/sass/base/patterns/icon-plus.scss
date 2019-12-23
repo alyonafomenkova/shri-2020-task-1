@@ -1,0 +1,34 @@
+.icon-plus {
+  display: flex;
+
+  &_vertical-align {
+    &_center {
+      align-items: center;
+    }
+  }
+}
+
+.icon-plus__icon {
+  display: flex;
+
+  &_indent-r {
+    &_s {
+      margin-right: var(--space-s);
+    }
+
+    &_m {
+      margin-right: var(--space-m);
+    }
+  }
+
+  &_indent-l {
+    &_l {
+      margin-left: var(--space-l);
+    }
+  }
+}
+
+.icon-plus__block {
+  // Элемент в который вкладывается контент, например текст. Используется без модификаторов
+  background-color: pink; // TODO: удалить и подумать об отступах
+}
