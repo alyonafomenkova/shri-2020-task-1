@@ -1,0 +1,13 @@
+.cover {
+  min-height: 472px;
+
+  // TODO: отступ между изображением и текстом — l,
+
+  .image {
+    height: 180px;
+  }
+
+  .button {
+    height: var(--line-height-l);
+  }
+}
