@@ -11,10 +11,11 @@
 .informer__content,
 .informer__action {
   display: flex;
+  flex-wrap: wrap;
 
   &_distribute {
     &_default {
-      justify-content: space-around; // TODO: уточнить, какое значение должно быть по default
+      justify-content: flex-start;
     } 
 
     &_between {

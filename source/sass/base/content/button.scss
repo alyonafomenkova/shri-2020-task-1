@@ -1,9 +1,8 @@
 .button {
+  width: 200px;
   background-color: var(--bg-accent-color);
 
   &_size {
-    width: 200px;
-
     &_s {
       height: 24px;
     }

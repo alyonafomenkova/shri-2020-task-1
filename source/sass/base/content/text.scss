@@ -1,155 +1,171 @@
-.text {
-  &_align {
-    &_center {
-      text-align: center;
-    }
-  }
+.text__word {
+  display: inline-block;//
+}
 
-  &_size {
-    &_s {
-      font-size: var(--font-size-s);
+.text_align_center {
+  text-align: center;
+}
 
-      .text__word {
-        height: 8px;
-  
-        &_width {
-          &_s {
-            width: 20px;
-          }
-  
-          &_m {
-            width: 48px;
-          }
-    
-          &_l {
-            width: 100px;
-          }
+.text_size {
+  &_s {
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-s);
+
+    .text__word {
+      height: 8px;
+      vertical-align: sub;//
+
+      &_width {
+        &_s {
+          width: 20px;
         }
-      }
-    }
 
-    &_m {
-      font-size: var(--font-size-m);
-
-      .text__word {
-        height: 10px;
-  
-        &_width {
-          &_s {
-            width: 24px;
-          }
-    
-          &_m {
-            width: 56px;
-          }
-    
-          &_l {
-            width: 114px;
-          }
+        &_m {
+          width: 48px;
         }
-      }
-    }
 
-    &_l {
-      font-size: var(--font-size-l);
-
-      .text__word {
-        height: 11px;
-  
-        &_width {
-          &_s {
-            width: 28px;
-          }
-    
-          &_m {
-            width: 68px;
-          }
-    
-          &_l {
-            width: 138px;
-          }
-        }
-      }
-    }
-
-    &_xl {
-      font-size: var(--font-size-xl);
-
-      .text__word {
-        height: 13px;
-  
-        &_width {
-          &_s {
-            width: 32px;
-          }
-    
-          &_m {
-            width: 74px;
-          }
-    
-          &_l {
-            width: 154px;
-          }
-        }
-      }
-    }
-
-    &_xxl {
-      font-size: var(--font-size-xxl);
-
-      .text__word {
-        height: 16px;
-  
-        &_width {
-          &_s {
-            width: 36px;
-          }
-    
-          &_m {
-            width: 88px;
-          }
-    
-          &_l {
-            width: 184px;
-          }
+        &_l {
+          width: 100px;
         }
       }
     }
   }
 
-  &_type {
-    &_h1 {
-      margin: 18px 0 24px;
-    }
+  &_m {
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-m);
 
-    &_h2 {
-      margin: 45px 0 21px;
-    }
+    .text__word {
+      height: 10px;
+      vertical-align: text-bottom;//
 
-    &_h3 {
-      margin: 42px 0 0;
-    }
+      &_width {
+        &_s {
+          width: 24px;
+        }
 
-    &_p {
-      margin: 15px 0 21px;
+        &_m {
+          width: 56px;
+        }
+
+        &_l {
+          width: 114px;
+        }
+      }
     }
   }
 
-  &_view {
-    &_primary {
-      color: var(--primary-text-color);
-    }
+  &_l {
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-l);
 
-    &_secondary {
-      color: var(--secondary-text-color);
-    }
+    .text__word {
+      height: 11px;
+      vertical-align: text-top;//
 
-    &_ghost {
-      color: var(--additional-text-color);
-    }
+      &_width {
+        &_s {
+          width: 28px;
+        }
 
-    &_link {
-      color: var(--link-text-color);
+        &_m {
+          width: 68px;
+        }
+
+        &_l {
+          width: 138px;
+        }
+      }
+    }
+  }
+
+  &_xl {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
+
+    .text__word {
+      height: 13px;
+      vertical-align: text-top;//
+
+      &_width {
+        &_s {
+          width: 32px;
+        }
+
+        &_m {
+          width: 74px;
+        }
+
+        &_l {
+          width: 154px;
+        }
+      }
+    }
+  }
+
+  &_xxl {
+    font-size: var(--font-size-xxl);
+    line-height: var(--line-height-xxl);
+
+    .text__word {
+      height: 16px;
+
+      &_width {
+        &_s {
+          width: 36px;
+        }
+
+        &_m {
+          width: 88px;
+        }
+
+        &_l {
+          width: 184px;
+        }
+      }
     }
   }
 }
+
+.text_type {
+  &_h1 {
+    margin: 18px 0 24px;
+  }
+
+  &_h2 {
+    margin: 45px 0 21px;
+  }
+
+  &_h3 {
+    margin: 42px 0 0;
+  }
+
+  &_p {
+    margin: 15px 0 21px;
+  }
+}
+
+.text_view {
+  &_primary .text__word {
+    background-color: var(--primary-text-color);
+  }
+
+  &_secondary .text__word {
+		background-color: var(--secondary-text-color);
+  }
+
+  &_ghost .text__word {
+		background-color: var(--additional-text-color);
+  }
+
+  &_link {
+    text-decoration: none;
+    cursor: pointer;
+    
+	  .text__word {
+		  background-color: var(--link-text-color);
+    }
+  }
+}
+
+// Количество слов внутри каждой интерфейсной сущности можно взять из файла text-mods.md

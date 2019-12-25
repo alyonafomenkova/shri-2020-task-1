@@ -1,17 +1,5 @@
-$screen-m: $desktop-width;
-
 .grid {
   display: grid;
-}
-
-.grid_m-columns {
-  &_12 {
-    grid-template-columns: repeat(12, minmax($screen-m, 1fr));
-  }
-
-  &_10 {
-    grid-template-columns: repeat(10, minmax($screen-m, 1fr));
-  }
 }
 
 .grid_col-gap {
@@ -39,6 +27,16 @@ $screen-m: $desktop-width;
 }
 
 @media (min-width: $desktop-width) {
+  .grid_m-columns {
+    &_12 {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  
+    &_10 {
+      grid-template-columns: repeat(10, 1fr);
+    }
+  }
+
   .grid__fraction_m-col {
     &_2 {
       grid-column: span 2;
