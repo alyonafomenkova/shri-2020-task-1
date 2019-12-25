@@ -1,6 +1,7 @@
 .onoffswitch {
   width: 97px;
   height: 32px;
+  padding: 2px;
   border: 2px solid var(--border-color);
 }
 
@@ -8,4 +9,11 @@
   width: 24px;
   height: 24px;
   background-color: var(--primary-text-color);
+  background-color: var(--border-color);
 }
+
+.onoffswitch_checked .onoffswitch__button {
+  float: right;
+}
+
+// TODO: переключение между дефолтной и инверсной темами. Блоки с темами project-warning и project-brand остаются без изменений
