@@ -1,9 +1,8 @@
 .input {
   border: 3px solid var(--border-color);
+  width: 100%;
 
   &_size {
-    width: 100%;
-
     &_s {
       height: 24px;
     }

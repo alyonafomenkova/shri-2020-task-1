@@ -9,8 +9,6 @@
 }
 
 .form__item {
-  display: flex;
-
   &_border {
     &_bottom {
       border-bottom: 3px solid var(--border-color);
@@ -23,12 +21,14 @@
 
   &_distribute {
     &_between {
+      display: flex;
       justify-content: space-between;
     } 
   }
 
   &_vertical-align {
     &_center {
+      display: flex;
       align-items: center;
     } 
   }
@@ -36,38 +36,74 @@
   &_indent-b {
     &_xxxs {
       margin-bottom: var(--space-xxxs);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &_xxs {
       margin-bottom: var(--space-xxs);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     } 
 
     &_s {
       margin-bottom: var(--space-s);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     } 
 
     &_m {
       margin-bottom: var(--space-m);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &_l {
       margin-bottom: var(--space-l);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &_xl {
       margin-bottom: var(--space-xl);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &_xxl {
       margin-bottom: var(--space-xxl);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &_xxxl {
       margin-bottom: var(--space-xxxl);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &_xxxxl {
       margin-bottom: var(--space-xxxxl);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -172,4 +208,10 @@
       width: 35%;
     }
   }
+}
+
+.form__control {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
