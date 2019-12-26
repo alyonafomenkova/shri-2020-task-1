@@ -1,6 +1,8 @@
 .card {
+  position: relative;
+
   &_border_all {
-    border: 1px solid var(--border-color); // TODO: уточнить размер рамки
+    border: 3px solid var(--border-color);
   }
 
   &_view_default {
@@ -10,6 +12,7 @@
 
 .card__content {
   display: flex;
+  flex-direction: column-reverse;
 
   &_distribute {
     justify-content: center;
@@ -47,6 +50,7 @@
   bottom: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   width:100%;
 
   &_distribute {
