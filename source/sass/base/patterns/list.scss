@@ -9,8 +9,6 @@
 }
 
 .list__item {
-  display: flex;
-
   &_border {
     &_bottom {
       border-bottom: 1px solid var(--border-color);
@@ -23,14 +21,15 @@
 
   &_distribute {
     &_between {
+      display: flex;
       justify-content: space-between;
-    } 
+    }
   }
 
   &_vertical-align {
     &_center {
       align-items: center;
-    } 
+    }
   }
 
   &_indent-t {
