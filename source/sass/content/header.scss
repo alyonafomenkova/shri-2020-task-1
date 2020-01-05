@@ -1,6 +1,6 @@
 .header {
   padding: var(--space-xxxl) var(--gap);
-  background-color: var(--color-bg-default);
+  background-color: var(--bg-default-color);
 }
 
 .header__logo {
@@ -10,8 +10,8 @@
 }
 
 .header__content {
-  display: flex;        
+  display: flex;
   justify-content: space-between;
-  max-width: 1280px;    
-  margin: 0 auto;    
+  max-width: 1280px;
+  margin: 0 auto;
 }
