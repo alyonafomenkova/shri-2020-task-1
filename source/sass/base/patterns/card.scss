@@ -12,14 +12,16 @@
 
 .card__content {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 
   &_distribute {
     justify-content: center;
   }
 
   &_vertical-align {
-    align-items: center;
+    &_center {
+      align-items: center;
+    }
   }
 
   &_space-a {
@@ -93,7 +95,7 @@
     &_xl {
       padding: var(--space-xl);
     }
-    
+
     &_xxl {
       padding: var(--space-xxl);
     }

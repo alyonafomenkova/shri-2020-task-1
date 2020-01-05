@@ -1,6 +1,16 @@
 .event {
   min-height: 400px;
-  // TODO: величина отступа между логотипами и первой строкой равна значению xxl,
-  // TODO: величина отступа между заголовком и текстом — s,
-  // TODO: величина отступа между логотипами — xs.
+}
+
+.event__preview {
+  display: flex;
+  margin-bottom: var(--space-xxl);
+}
+
+.event__title {
+  margin-bottom: var(--space-s);
+}
+
+.event__speaker {
+  margin-right: var(--space-xs);
 }
