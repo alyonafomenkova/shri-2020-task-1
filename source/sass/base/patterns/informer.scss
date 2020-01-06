@@ -1,6 +1,6 @@
 .informer {
   height: 100%;
-  
+
   &_border_all {
     border: 3px solid var(--border-color);
   }
@@ -13,20 +13,21 @@
 .informer__content,
 .informer__action {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 
   &_distribute {
     &_default {
       justify-content: flex-start;
-    } 
+    }
 
     &_between {
       justify-content: space-between;
-    } 
+    }
 
     &_center {
       justify-content: center;
-    } 
+    }
   }
 
   &_space-a {
