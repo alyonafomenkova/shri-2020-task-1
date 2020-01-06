@@ -1,7 +1,7 @@
 {
   "name": "shri-2020-task-1",
   "version": "1.0.0",
-  "description": "",
+  "description": "В этом репозитории находятся материалы тестового задания «Реализуйте дизайн-систему» для [16-й Школы разработки интерфейсов](https://yandex.ru/promo/academy/shri) (зима 2020, Москва).",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
@@ -9,20 +9,30 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "gulp": "^4.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.7.3",
-    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.13.0"
-  }
+    "gulp-uglify-es": "^2.0.0",
+    "node-sass": "^4.13.0",
+    "normalize-scss": "^7.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alyonafomenkova/shri-2020-task-1.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/alyonafomenkova/shri-2020-task-1/issues"
+  },
+  "homepage": "https://github.com/alyonafomenkova/shri-2020-task-1#readme"
 }
