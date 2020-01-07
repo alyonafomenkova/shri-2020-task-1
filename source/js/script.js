@@ -6,10 +6,7 @@
   const CHECKED_SWITCH_BUTTON_CLASS = 'onoffswitch_checked';
   const DEFAULT_THEME_CLASS = 'theme_color_project-default';
   const INVERSE_THEME_CLASS = 'theme_color_project-inverse';
-
-  function getBody() {
-    return document.querySelector('body');
-  }
+  let body;
 
   function replaceClassElements(elements, fromClassName, toClassName) {
     elements.forEach((element) => {
@@ -19,7 +16,6 @@
   }
 
   function switchTheme() {
-    const body = getBody();
     const defaultThemeBlocks = body.querySelectorAll(`.${DEFAULT_THEME_CLASS}`);
     const inverseThemeBlocks = body.querySelectorAll(`.${INVERSE_THEME_CLASS}`);
     const switchButton = body.querySelector(`.${SWITCH_BUTTON_CLASS}`);
@@ -50,13 +46,16 @@
     return false;
   }
 
-  function onBodyClick(event) {
-    const element = event.target;
+  function onBodyClick(evt) {
+    const element = evt.target;
     if (element != null) {
       if (checkSwitchThemeClick(element)) return;
       checkAccordionListElementClick(element);
     }
   }
 
-  getBody().addEventListener('click', onBodyClick);
+  document.addEventListener('DOMContentLoaded', () => {
+    body = document.querySelector('body');
+    body.addEventListener('click', onBodyClick);
+  });
 }());
