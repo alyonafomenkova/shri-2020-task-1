@@ -11,11 +11,19 @@
 .list__item {
   &_border {
     &_bottom {
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 3px solid var(--border-color);
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
 
     &_top {
-      border-top: 1px solid var(--border-color);
+      border-top: 3px solid var(--border-color);
+
+      &:first-child {
+        border-top: none;
+      }
     }
   }
 
