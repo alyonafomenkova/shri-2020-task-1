@@ -23,7 +23,7 @@ gulp.task('css', () => gulp.src('source/sass/style.scss')
 gulp.task('js', () => gulp.src([
   'source/js/script.js',
 ])
-  //.pipe(uglify())
+  .pipe(uglify())
   .pipe(gulp.dest('build')));
 
 gulp.task('build', gulp.series(
