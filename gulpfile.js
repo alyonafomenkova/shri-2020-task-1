@@ -6,7 +6,6 @@ const autoprefixer = require('autoprefixer');
 const del = require('del');
 const csso = require('gulp-csso');
 const uglify = require('gulp-uglify-es').default;
-const concat = require('gulp-concat');
 
 gulp.task('clean', () => del('build'));
 
@@ -22,10 +21,8 @@ gulp.task('css', () => gulp.src('source/sass/style.scss')
   .pipe(gulp.dest('build')));
 
 gulp.task('js', () => gulp.src([
-  'source/js/accordion.js',
-  'source/js/onoffswitch.js',
+  'source/js/script.js',
 ])
-  .pipe(concat('script.js'))
   .pipe(uglify())
   .pipe(gulp.dest('build')));
 
