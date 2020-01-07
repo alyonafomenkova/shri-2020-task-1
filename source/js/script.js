@@ -6,8 +6,10 @@
   const CHECKED_SWITCH_BUTTON_CLASS = 'onoffswitch_checked';
   const DEFAULT_THEME_CLASS = 'theme_color_project-default';
   const INVERSE_THEME_CLASS = 'theme_color_project-inverse';
-  const body = document.querySelector('body');
-  const switchButton = body.querySelector('.onoffswitch');
+
+  function getBody() {
+    return document.querySelector('body');
+  }
 
   function replaceClassElements(elements, fromClassName, toClassName) {
     elements.forEach((element) => {
@@ -17,8 +19,10 @@
   }
 
   function switchTheme() {
+    const body = getBody();
     const defaultThemeBlocks = body.querySelectorAll(`.${DEFAULT_THEME_CLASS}`);
     const inverseThemeBlocks = body.querySelectorAll(`.${INVERSE_THEME_CLASS}`);
+    const switchButton = body.querySelector(`.${SWITCH_BUTTON_CLASS}`);
     replaceClassElements(defaultThemeBlocks, DEFAULT_THEME_CLASS, INVERSE_THEME_CLASS);
     replaceClassElements(inverseThemeBlocks, INVERSE_THEME_CLASS, DEFAULT_THEME_CLASS);
     switchButton.classList.toggle(CHECKED_SWITCH_BUTTON_CLASS);
@@ -54,5 +58,5 @@
     }
   }
 
-  body.addEventListener('click', onBodyClick);
+  getBody().addEventListener('click', onBodyClick);
 }());

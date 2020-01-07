@@ -1,1 +1,62 @@
-!function(){const e=document.querySelector("body"),o=e.querySelector(".onoffswitch");function t(e,o,t){e.forEach(e=>{e.classList.toggle(o),e.classList.toggle(t)})}function c(c){const r=null!=c.closest(".onoffswitch");return r&&function(){const c=e.querySelectorAll(".theme_color_project-default"),r=e.querySelectorAll(".theme_color_project-inverse");t(c,"theme_color_project-default","theme_color_project-inverse"),t(r,"theme_color_project-inverse","theme_color_project-default"),o.classList.toggle("onoffswitch_checked")}(),r}e.addEventListener("click",(function(e){const o=e.target;if(null!=o){if(c(o))return;!function(e){const o=e.closest(".e-accordion");null!=o&&function(e){e.querySelector(".e-accordion__more").classList.toggle("e-accordion__more_show")}(o)}(o)}}))}();
+(function () {
+  const ACCORDION_CLASS = 'e-accordion';
+  const ACCORDION_MORE_CLASS = 'e-accordion__more';
+  const TOGGLE_ACCORDION_CLASS = 'e-accordion__more_show';
+  const SWITCH_BUTTON_CLASS = 'onoffswitch';
+  const CHECKED_SWITCH_BUTTON_CLASS = 'onoffswitch_checked';
+  const DEFAULT_THEME_CLASS = 'theme_color_project-default';
+  const INVERSE_THEME_CLASS = 'theme_color_project-inverse';
+
+  function getBody() {
+    return document.querySelector('body');
+  }
+
+  function replaceClassElements(elements, fromClassName, toClassName) {
+    elements.forEach((element) => {
+      element.classList.toggle(fromClassName);
+      element.classList.toggle(toClassName);
+    });
+  }
+
+  function switchTheme() {
+    const body = getBody();
+    const defaultThemeBlocks = body.querySelectorAll(`.${DEFAULT_THEME_CLASS}`);
+    const inverseThemeBlocks = body.querySelectorAll(`.${INVERSE_THEME_CLASS}`);
+    const switchButton = body.querySelector(`.${SWITCH_BUTTON_CLASS}`);
+    replaceClassElements(defaultThemeBlocks, DEFAULT_THEME_CLASS, INVERSE_THEME_CLASS);
+    replaceClassElements(inverseThemeBlocks, INVERSE_THEME_CLASS, DEFAULT_THEME_CLASS);
+    switchButton.classList.toggle(CHECKED_SWITCH_BUTTON_CLASS);
+  }
+
+  function toggleAccordionListElement(parent) {
+    const accordingClassList = parent.querySelector(`.${ACCORDION_MORE_CLASS}`).classList;
+    accordingClassList.toggle(TOGGLE_ACCORDION_CLASS);
+  }
+
+  function checkSwitchThemeClick(element) {
+    const consumed = element.closest(`.${SWITCH_BUTTON_CLASS}`) != null;
+    if (consumed) {
+      switchTheme();
+    }
+    return consumed;
+  }
+
+  function checkAccordionListElementClick(element) {
+    const parent = element.closest(`.${ACCORDION_CLASS}`);
+    if (parent != null) {
+      toggleAccordionListElement(parent);
+      return true;
+    }
+    return false;
+  }
+
+  function onBodyClick(event) {
+    const element = event.target;
+    if (element != null) {
+      if (checkSwitchThemeClick(element)) return;
+      checkAccordionListElementClick(element);
+    }
+  }
+
+  getBody().addEventListener('click', onBodyClick);
+}());
