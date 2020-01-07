@@ -1,0 +1,9 @@
+TypeError: Cannot read property 'querySelector' of null
+    at eval (webpack-internal:///./static/alyonafomenkova/script.js:1:56)
+    at eval (webpack-internal:///./static/alyonafomenkova/script.js:1:773)
+    at Object../static/alyonafomenkova/script.js (file:///opt/buildagent/work/e163812401825360/screenshots/static/alyonafomenkova/build/script.js:96:1)
+    at __webpack_require__ (file:///opt/buildagent/work/e163812401825360/screenshots/static/alyonafomenkova/build/script.js:20:30)
+    at Object.1 (file:///opt/buildagent/work/e163812401825360/screenshots/static/alyonafomenkova/build/script.js:107:18)
+    at __webpack_require__ (file:///opt/buildagent/work/e163812401825360/screenshots/static/alyonafomenkova/build/script.js:20:30)
+    at file:///opt/buildagent/work/e163812401825360/screenshots/static/alyonafomenkova/build/script.js:84:18
+    at file:///opt/buildagent/work/e163812401825360/screenshots/static/alyonafomenkova/build/script.js:87:10
