@@ -6,32 +6,10 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 0; //
+  margin-top: 0;
 }
 
 .history__details {
   display: flex;
   align-items: center;
 }
-
-// history__transaction (list__item_border_bottom list__item_space-a_m)[пункт истории],
-// history__show (e-accordion__short list__item_vertical-align_center list__item_indent-t_m)[контейнер для видимой части строки],
-// history__hide (e-accordion__more e-accordion__more_view_default list__item list__item_indent-t_m)[контейнер для раскрывающейся части строки],
-// history__destination (icon-plus icon-plus_vertical-align_center)[объединяющий блок логотипа и текста],
-// history__pic (icon-plus__icon icon-plus__icon_indent-r_s icon-plus__icon_indent-l_l)[контейнер для логотипа],
-// history__label (icon-plus__block)[контейнер для текста],
-// history__description (list__item_indent-b_m)[две строки текста в расхлопе],
-// history__actions (list__item_distribute_between list__item_indent-b_l)[нижняя строка в расхлопнутом элементе с двумя блоками],
-
-// Элементы без примиксованных блоков паттернов:
-// history__details [объединяет блок времени, логотипа и текста],
-// history__time [блок времени (серые полосы слева)],
-// history__quantity [правый блок текста в видимой области],
-
-// Вложенные контентные блоки:
-// brand-logo brand-logo_name_blue brand-logo_size_m,
-// brand-logo brand-logo_name_green brand-logo_size_m,
-// brand-logo brand-logo_name_red brand-logo_size_m,
-// brand-logo brand-logo_name_purple brand-logo_size_m,
-// text text_view_primary text_size_l,
-// text text_view_ghost text_size_s.

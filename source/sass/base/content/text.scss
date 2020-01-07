@@ -1,5 +1,5 @@
 .text__word {
-  display: inline-block;//
+  display: inline-block;
 }
 
 .text_align_center {
@@ -13,7 +13,7 @@
 
     .text__word {
       height: 8px;
-      vertical-align: sub;//
+      vertical-align: sub;
 
       &_width {
         &_s {
@@ -37,7 +37,7 @@
 
     .text__word {
       height: 10px;
-      vertical-align: text-bottom;//
+      vertical-align: text-bottom;
 
       &_width {
         &_s {
@@ -61,7 +61,7 @@
 
     .text__word {
       height: 11px;
-      vertical-align: text-top;//
+      vertical-align: text-top;
 
       &_width {
         &_s {
@@ -85,7 +85,7 @@
 
     .text__word {
       height: 13px;
-      vertical-align: text-top;//
+      vertical-align: text-top;
 
       &_width {
         &_s {
@@ -161,11 +161,9 @@
   &_link {
     text-decoration: none;
     cursor: pointer;
-    
+
 	  .text__word {
 		  background-color: var(--link-text-color);
     }
   }
 }
-
-// Количество слов внутри каждой интерфейсной сущности можно взять из файла text-mods.md
