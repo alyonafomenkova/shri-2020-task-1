@@ -48,8 +48,10 @@
 
   function onBodyClick(event) {
     const element = event.target;
-    if (checkSwitchThemeClick(element)) return;
-    checkAccordionListElementClick(element);
+    if (element != null) {
+      if (checkSwitchThemeClick(element)) return;
+      checkAccordionListElementClick(element);
+    }
   }
 
   body.addEventListener('click', onBodyClick);
